@@ -1,6 +1,3 @@
-import re
-
-f = '''
 00;00;11;47 - 00;00;13;59
 Unknown
 Hey, Bob. Hi, Mommy.
@@ -88,8 +85,4 @@ Yeah, but wait, so you're still excited to train with me now? Yeah. Sometimes th
 00;05;45;04 - 00;05;54;04
 Unknown
 Yep. It's going to grind through as long as I have some Bengay and Douglas to give me a massage when need it, I think I'll survive.
-'''
 
-z = re.sub(pattern="\d{2};\d{2};\d{2};\d{2}\s-\s\d{2};\d{2};\d{2};\d{2}",repl="", string=f)
-
-print(z)
